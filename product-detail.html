@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - AgriExport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AgriExport</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section" style="padding-top: 120px;">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="products.html">Products</a>
+                <span>/</span>
+                <span>Fresh Tomatoes Premium Grade</span>
+            </div>
+
+            <div class="product-detail-content">
+                <!-- Product Images Section -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&h=600&fit=crop" alt="Fresh Tomatoes Main">
+                    </div>
+                    <div class="image-thumbnails">
+                        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=150&h=150&fit=crop" alt="Tomatoes 1" class="thumbnail active" onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1546470427-e5ac89cd2b28?w=150&h=150&fit=crop" alt="Tomatoes 2" class="thumbnail" onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=150&h=150&fit=crop" alt="Tomatoes 3" class="thumbnail" onclick="changeMainImage(this.src)">
+                    </div>
+                </div>
+
+                <!-- Product Information Section -->
+                <div class="product-info-detail">
+                    <div class="product-category-badge">Vegetables</div>
+                    <h1 class="product-title-detail">Fresh Tomatoes Premium Grade Export Quality</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-text">4.8 (127 reviews)</span>
+                    </div>
+
+                    <div class="product-price-detail">
+                        <span class="current-price">$2.50</span>
+                        <span class="price-unit">per kg</span>
+                        <span class="original-price">$3.00</span>
+                    </div>
+
+                    <div class="product-description">
+                        <h3>Product Description</h3>
+                        <p>Our premium grade fresh tomatoes are carefully selected and harvested at peak ripeness to ensure maximum flavor and nutritional value. These tomatoes are perfect for export markets, offering exceptional quality, vibrant color, and extended shelf life.</p>
+                        
+                        <p>Grown using sustainable farming practices in fertile soil with optimal climate conditions, our tomatoes meet international quality standards and food safety regulations. Each tomato is hand-picked and sorted to ensure only the finest quality reaches our customers.</p>
+
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Premium export quality grade A</li>
+                            <li>Rich in vitamins C, K, and antioxidants</li>
+                            <li>Extended shelf life of 2-3 weeks</li>
+                            <li>Vibrant red color and firm texture</li>
+                            <li>Pesticide-free and naturally grown</li>
+                            <li>Available in various sizes (small, medium, large)</li>
+                        </ul>
+
+                        <h4>Nutritional Benefits:</h4>
+                        <ul>
+                            <li>High in lycopene for heart health</li>
+                            <li>Rich source of vitamin C for immunity</li>
+                            <li>Contains folate and potassium</li>
+                            <li>Low in calories, high in water content</li>
+                            <li>Natural source of antioxidants</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-specifications">
+                        <h3>Specifications</h3>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Origin:</span>
+                                <span class="spec-value">Indonesia</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Variety:</span>
+                                <span class="spec-value">Roma Tomatoes</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Size:</span>
+                                <span class="spec-value">Medium to Large</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">5kg, 10kg, 20kg boxes</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Shelf Life:</span>
+                                <span class="spec-value">14-21 days</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Minimum Order:</span>
+                                <span class="spec-value">500kg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity (kg):</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn" onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="500" min="500" step="100">
+                                <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary btn-large">Request Quote</button>
+                            <button class="btn btn-secondary btn-large">Contact Supplier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="showTab('shipping')">Shipping & Packaging</button>
+                    <button class="tab-btn" onclick="showTab('certification')">Certifications</button>
+                    <button class="tab-btn" onclick="showTab('reviews')">Customer Reviews</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="shipping" class="tab-pane active">
+                        <h3>Shipping & Packaging Information</h3>
+                        <p>We ensure safe and timely delivery of our fresh tomatoes worldwide using advanced cold chain logistics and specialized packaging.</p>
+                        <ul>
+                            <li>Temperature-controlled transportation</li>
+                            <li>Ventilated packaging to maintain freshness</li>
+                            <li>Custom packaging sizes available</li>
+                            <li>Express shipping options for urgent orders</li>
+                            <li>Full tracking and insurance coverage</li>
+                        </ul>
+                    </div>
+
+                    <div id="certification" class="tab-pane">
+                        <h3>Quality Certifications</h3>
+                        <p>Our products meet international quality and safety standards with the following certifications:</p>
+                        <ul>
+                            <li>HACCP (Hazard Analysis Critical Control Points)</li>
+                            <li>ISO 22000 Food Safety Management</li>
+                            <li>Global GAP (Good Agricultural Practices)</li>
+                            <li>Organic Certification (available upon request)</li>
+                            <li>Phytosanitary Certificate for export</li>
+                        </ul>
+                    </div>
+
+                    <div id="reviews" class="tab-pane">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-container">
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <strong>John Smith</strong>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p>"Excellent quality tomatoes! Fresh, vibrant, and perfect for our restaurant chain. Will definitely order again."</p>
+                            </div>
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <strong>Maria Garcia</strong>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p>"Outstanding packaging and delivery. The tomatoes arrived in perfect condition and lasted longer than expected."</p>
+                            </div>
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <strong>Ahmed Hassan</strong>
+                                    <span class="review-rating">★★★★☆</span>
+                                </div>
+                                <p>"Good quality product. Competitive pricing and professional service. Recommended for wholesale buyers."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AgriExport</h3>
+                    <p>Leading agricultural export company specializing in premium vegetables, spices, and leaves for global markets.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Fresh Vegetables</a></li>
+                        <li><a href="products.html">Spices & Herbs</a></li>
+                        <li><a href="products.html">Medicinal Leaves</a></li>
+                        <li><a href="products.html">Organic Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Export Services</a></li>
+                        <li><a href="services.html">Quality Assurance</a></li>
+                        <li><a href="services.html">Global Shipping</a></li>
+                        <li><a href="services.html">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AgriExport. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product detail specific functions
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src.replace('w=150&h=150', 'w=600&h=600');
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        function increaseQuantity() {
+            const input = document.getElementById('quantity');
+            const currentValue = parseInt(input.value);
+            input.value = currentValue + 100;
+        }
+
+        function decreaseQuantity() {
+            const input = document.getElementById('quantity');
+            const currentValue = parseInt(input.value);
+            const minValue = parseInt(input.min);
+            if (currentValue > minValue) {
+                input.value = currentValue - 100;
+            }
+        }
+
+        function showTab(tabName) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab pane
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
