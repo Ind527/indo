@@ -527,9 +527,6 @@ window.addEventListener('beforeprint', function() {
 window.addEventListener('afterprint', function() {
     document.body.classList.remove('print-mode');
 });
-```
-
-```javascript
 // This code modifies the original JavaScript file to remove the parallax effect on the hero image and adds a null check for the contact form.
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
