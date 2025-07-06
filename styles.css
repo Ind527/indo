@@ -91,7 +91,7 @@ html {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #e8f5e8 0%, #a8d8a8 50%, #7cc17c 100%);
     padding: 100px 20px 50px;
 }
 
@@ -192,7 +192,7 @@ html {
 /* Features Section */
 .features {
     padding: 100px 0;
-    background: white;
+    background: linear-gradient(45deg, #f8fff8 0%, #e6f7e6 100%);
 }
 
 .features-grid {
@@ -234,7 +234,7 @@ html {
 /* Products Preview Section */
 .products-preview {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 50%, #ffd9b3 100%);
 }
 
 .product-categories-preview {
@@ -282,7 +282,7 @@ html {
 /* Process Section */
 .process {
     padding: 100px 0;
-    background: white;
+    background: linear-gradient(to right, #f0fff0 0%, #e8f5e8 100%);
 }
 
 .process-timeline {
@@ -325,7 +325,7 @@ html {
 /* Testimonials Section */
 .testimonials {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f5f8ff 0%, #e8f1ff 50%, #d6e9ff 100%);
 }
 
 .testimonials-grid {
