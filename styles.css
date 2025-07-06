@@ -466,7 +466,7 @@ html {
 .section-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ee4d2d;
+    color: #2d7a2d;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -483,9 +483,9 @@ html {
 
 .filter-btn {
     padding: 10px 20px;
-    border: 2px solid #ee4d2d;
+    border: 2px solid #2d7a2d;
     background: white;
-    color: #ee4d2d;
+    color: #2d7a2d;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -495,15 +495,15 @@ html {
 }
 
 .filter-btn:hover {
-    background: #ee4d2d;
+    background: #2d7a2d;
     color: white;
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
-    background: #ee4d2d;
+    background: #2d7a2d;
     color: white;
-    box-shadow: 0 2px 8px rgba(238, 77, 45, 0.3);
+    box-shadow: 0 2px 8px rgba(45, 122, 45, 0.3);
 }
 
 .product-card-shopee.hidden {
@@ -540,7 +540,7 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    background: #ee4d2d;
+    background: #2d7a2d;
     color: white;
     padding: 2px 8px;
     font-size: 0.75rem;
@@ -595,7 +595,7 @@ html {
 }
 
 .price-current {
-    color: #ee4d2d;
+    color: #2d7a2d;
     font-size: 1rem;
     font-weight: 600;
     margin-right: 8px;
