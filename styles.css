@@ -457,69 +457,198 @@ html {
     transition: all 0.3s ease;
 }
 
-/* Products Section Simple Design */
+/* Products Section Shopee Style */
 .products-section {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: #f5f5f5;
 }
 
-.product-grid {
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ee4d2d;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Shopee Style Product Grid */
+.product-grid-shopee {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
-.product-card {
+.product-card-shopee {
     background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 15px;
-    text-align: center;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.product-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
     border-radius: 4px;
-    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.product-image-placeholder {
+.product-card-shopee:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Discount Badge */
+.discount-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ee4d2d;
+    color: white;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 10;
+    border-bottom-left-radius: 4px;
+}
+
+/* Product Image */
+.product-image-shopee {
     width: 100%;
     height: 180px;
-    background: #e8e8e8;
-    border-radius: 4px;
-    margin-bottom: 15px;
+    background: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #888;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 60px;
+    position: relative;
+    overflow: hidden;
 }
 
-.product-info h3 {
-    font-size: 1.25rem;
+.product-image-shopee span {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-card-shopee:hover .product-image-shopee span {
+    transform: scale(1.1);
+}
+
+/* Product Info */
+.product-info-shopee {
+    padding: 8px;
+}
+
+.product-title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    height: 2.6em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Price Section */
+.product-price {
+    margin-bottom: 8px;
+}
+
+.price-current {
+    color: #ee4d2d;
+    font-size: 1rem;
     font-weight: 600;
-    color: #2d7a2d;
-    margin-bottom: 10px;
+    margin-right: 8px;
 }
 
-.product-info p {
-    color: #666;
-    line-height: 1.5;
-    font-size: 0.95rem;
+.price-original {
+    color: #999;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+
+/* Product Meta */
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #757575;
+}
+
+.store-location {
+    display: flex;
+    align-items: center;
+}
+
+.store-location::before {
+    content: "📍";
+    margin-right: 3px;
+    font-size: 0.8rem;
+}
+
+.sold-count {
+    color: #757575;
+}
+
+/* Responsive Design for Shopee Style */
+@media (max-width: 1200px) {
+    .product-grid-shopee {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .product-grid-shopee {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid-shopee {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+    
+    .product-image-shopee {
+        height: 150px;
+        font-size: 48px;
+    }
+    
+    .product-title {
+        font-size: 0.75rem;
+    }
+    
+    .price-current {
+        font-size: 0.9rem;
+    }
+    
+    .price-original {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid-shopee {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+        padding: 0 4px;
+    }
+    
+    .product-info-shopee {
+        padding: 6px;
+    }
+    
+    .product-meta {
+        font-size: 0.65rem;
+    }
+    
+    .discount-badge {
+        font-size: 0.7rem;
+        padding: 1px 6px;
+    }
 }
 
 @media (max-width: 768px) {
