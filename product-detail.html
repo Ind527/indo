@@ -62,6 +62,7 @@
                         <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=150&h=150&fit=crop" alt="Tomatoes 1" class="thumbnail active" onclick="changeMainImage(this.src)">
                         <img src="https://images.unsplash.com/photo-1546470427-e5ac89cd2b28?w=150&h=150&fit=crop" alt="Tomatoes 2" class="thumbnail" onclick="changeMainImage(this.src)">
                         <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=150&h=150&fit=crop" alt="Tomatoes 3" class="thumbnail" onclick="changeMainImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1606844556637-b1a02d516c97?w=150&h=150&fit=crop" alt="Tomatoes 4" class="thumbnail" onclick="changeMainImage(this.src)">
                     </div>
                 </div>
 
@@ -70,22 +71,7 @@
                     <div class="product-category-badge">Vegetables</div>
                     <h1 class="product-title-detail">Fresh Tomatoes Premium Grade Export Quality</h1>
                     
-                    <div class="product-rating">
-                        <div class="stars">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
-                        <span class="rating-text">4.8 (127 reviews)</span>
-                    </div>
-
-                    <div class="product-price-detail">
-                        <span class="current-price">$2.50</span>
-                        <span class="price-unit">per kg</span>
-                        <span class="original-price">$3.00</span>
-                    </div>
+                    
 
                     <div class="product-description">
                         <h3>Product Description</h3>
@@ -103,14 +89,7 @@
                             <li>Available in various sizes (small, medium, large)</li>
                         </ul>
 
-                        <h4>Nutritional Benefits:</h4>
-                        <ul>
-                            <li>High in lycopene for heart health</li>
-                            <li>Rich source of vitamin C for immunity</li>
-                            <li>Contains folate and potassium</li>
-                            <li>Low in calories, high in water content</li>
-                            <li>Natural source of antioxidants</li>
-                        </ul>
+                        
                     </div>
 
                     <div class="product-specifications">
@@ -285,9 +264,149 @@
 
     <script src="script.js"></script>
     <script>
+        // Product data
+        const productData = {
+            'tomatoes': {
+                category: 'Vegetables',
+                title: 'Fresh Tomatoes Premium Grade Export Quality',
+                images: [
+                    'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1546470427-e5ac89cd2b28?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1606844556637-b1a02d516c97?w=600&h=600&fit=crop'
+                ],
+                description: 'Our premium grade fresh tomatoes are carefully selected and harvested at peak ripeness to ensure maximum flavor and nutritional value. These tomatoes are perfect for export markets, offering exceptional quality, vibrant color, and extended shelf life.',
+                features: [
+                    'Premium export quality grade A',
+                    'Extended shelf life of 2-3 weeks',
+                    'Vibrant red color and firm texture',
+                    'Pesticide-free and naturally grown',
+                    'Available in various sizes (small, medium, large)'
+                ],
+                specifications: {
+                    'Origin': 'Indonesia',
+                    'Variety': 'Roma Tomatoes',
+                    'Size': 'Medium to Large',
+                    'Packaging': '5kg, 10kg, 20kg boxes',
+                    'Shelf Life': '14-21 days',
+                    'Minimum Order': '500kg'
+                }
+            },
+            'rice': {
+                category: 'Grains',
+                title: 'Premium Rice Long Grain Export Quality',
+                images: [
+                    'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1599909533271-6d4d4e5df1c9?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1543826173-80e52e94e5da?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1636040159983-0a3e2fc42d8c?w=600&h=600&fit=crop'
+                ],
+                description: 'Premium long grain rice with excellent quality and aroma. Our rice is carefully processed and sorted to meet international standards for export markets.',
+                features: [
+                    'Long grain premium quality',
+                    'Low broken percentage',
+                    'Natural aroma and taste',
+                    'Double polished finish',
+                    'Export grade packaging'
+                ],
+                specifications: {
+                    'Origin': 'Indonesia',
+                    'Variety': 'Long Grain',
+                    'Grade': 'Premium A',
+                    'Packaging': '25kg, 50kg bags',
+                    'Shelf Life': '12 months',
+                    'Minimum Order': '1000kg'
+                }
+            },
+            'spices': {
+                category: 'Spices',
+                title: 'Organic Spices Bundle Premium Quality',
+                images: [
+                    'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1596544836044-d55e7fa49a2e?w=600&h=600&fit=crop',
+                    'https://images.unsplash.com/photo-1585556275347-4b2abbc6004b?w=600&h=600&fit=crop'
+                ],
+                description: 'Premium organic spice collection sourced from the finest farms. Each spice is carefully selected, dried, and packaged to preserve its natural flavor and aroma.',
+                features: [
+                    'Certified organic spices',
+                    'Premium quality selection',
+                    'Natural flavor and aroma',
+                    'Carefully processed and packaged',
+                    'Various spice combinations available'
+                ],
+                specifications: {
+                    'Origin': 'Indonesia',
+                    'Type': 'Mixed Spices',
+                    'Grade': 'Organic Premium',
+                    'Packaging': '1kg, 5kg containers',
+                    'Shelf Life': '24 months',
+                    'Minimum Order': '100kg'
+                }
+            }
+        };
+
+        // Load product data on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id') || 'tomatoes';
+            loadProduct(productId);
+        });
+
+        function loadProduct(productId) {
+            const product = productData[productId];
+            if (!product) return;
+
+            // Update breadcrumb
+            document.querySelector('.breadcrumb span:last-child').textContent = product.title;
+
+            // Update product info
+            document.querySelector('.product-category-badge').textContent = product.category;
+            document.querySelector('.product-title-detail').textContent = product.title;
+            document.querySelector('.product-description p').textContent = product.description;
+
+            // Update features
+            const featuresList = document.querySelector('.product-description ul');
+            featuresList.innerHTML = '';
+            product.features.forEach(feature => {
+                const li = document.createElement('li');
+                li.textContent = feature;
+                featuresList.appendChild(li);
+            });
+
+            // Update specifications
+            const specGrid = document.querySelector('.spec-grid');
+            specGrid.innerHTML = '';
+            Object.entries(product.specifications).forEach(([label, value]) => {
+                const specItem = document.createElement('div');
+                specItem.className = 'spec-item';
+                specItem.innerHTML = `
+                    <span class="spec-label">${label}:</span>
+                    <span class="spec-value">${value}</span>
+                `;
+                specGrid.appendChild(specItem);
+            });
+
+            // Update images
+            const mainImage = document.getElementById('mainImage');
+            const thumbnails = document.querySelector('.image-thumbnails');
+            
+            mainImage.src = product.images[0];
+            thumbnails.innerHTML = '';
+            
+            product.images.forEach((image, index) => {
+                const thumbnail = document.createElement('img');
+                thumbnail.src = image.replace('w=600&h=600', 'w=150&h=150');
+                thumbnail.alt = `${product.title} ${index + 1}`;
+                thumbnail.className = `thumbnail ${index === 0 ? 'active' : ''}`;
+                thumbnail.onclick = () => changeMainImage(image);
+                thumbnails.appendChild(thumbnail);
+            });
+        }
+
         // Product detail specific functions
         function changeMainImage(src) {
-            document.getElementById('mainImage').src = src.replace('w=150&h=150', 'w=600&h=600');
+            document.getElementById('mainImage').src = src;
             
             // Update active thumbnail
             document.querySelectorAll('.thumbnail').forEach(thumb => {
