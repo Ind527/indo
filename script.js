@@ -1063,3 +1063,57 @@ window.addEventListener('beforeprint', function() {
 window.addEventListener('afterprint', function() {
     document.body.classList.remove('print-mode');
 });
+
+// Product Filters Functionality
+function initializeProductFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card-shopee');
+
+    // Only initialize if filter buttons exist
+    if (filterButtons.length === 0) return;
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            // Filter products
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                
+                if (filterValue === 'all' || category === filterValue) {
+                    card.style.display = 'block';
+                    card.classList.remove('hidden');
+                } else {
+                    card.style.display = 'none';
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Add fade-in animation to visible cards
+            setTimeout(() => {
+                productCards.forEach(card => {
+                    if (!card.classList.contains('hidden')) {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.transition = 'all 0.3s ease';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    }
+                });
+            }, 100);
+        });
+    });
+}
+
+// Initialize product filters when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initializeProductFilters();
+});

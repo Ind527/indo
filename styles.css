@@ -472,6 +472,44 @@ html {
     letter-spacing: 1px;
 }
 
+/* Product Filters */
+.product-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #ee4d2d;
+    background: white;
+    color: #ee4d2d;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter-btn:hover {
+    background: #ee4d2d;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: #ee4d2d;
+    color: white;
+    box-shadow: 0 2px 8px rgba(238, 77, 45, 0.3);
+}
+
+.product-card-shopee.hidden {
+    display: none;
+}
+
 /* Shopee Style Product Grid */
 .product-grid-shopee {
     display: grid;
