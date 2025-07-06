@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Product Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #2d7a2d;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2d7a2d;
+            margin-bottom: 0.8rem;
+        }
+
+        .product-info p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .product-info {
+                padding: 1rem;
+            }
+            
+            .product-info h3 {
+                font-size: 1.1rem;
+            }
+            
+            .product-info p {
+                font-size: 0.9rem;
+            }
+            
+            .product-image {
+                height: 180px;
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .products-grid {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">🍅</div>
+                <div class="product-info">
+                    <h3>Fresh Tomatoes</h3>
+                    <p>Premium grade tomatoes for export</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌾</div>
+                <div class="product-info">
+                    <h3>Premium Rice</h3>
+                    <p>High-quality rice with excellent shelf life</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌶️</div>
+                <div class="product-info">
+                    <h3>Organic Spices</h3>
+                    <p>Authentic spices for global market</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥥</div>
+                <div class="product-info">
+                    <h3>Coconut Products</h3>
+                    <p>Fresh coconut derivatives</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥭</div>
+                <div class="product-info">
+                    <h3>Tropical Fruits</h3>
+                    <p>Sweet tropical fruits for export</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥬</div>
+                <div class="product-info">
+                    <h3>Green Vegetables</h3>
+                    <p>Fresh leafy vegetables</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌿</div>
+                <div class="product-info">
+                    <h3>Dried Herbs</h3>
+                    <p>Carefully processed herbs</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">☕</div>
+                <div class="product-info">
+                    <h3>Premium Coffee</h3>
+                    <p>Single origin coffee beans</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
